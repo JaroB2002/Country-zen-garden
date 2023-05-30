@@ -1,0 +1,257 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/ */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	border: 20px solid #8F5A10;
+
+}
+
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.9;
+	color: #555753; 
+	background-color: #F0D2BA;
+	margin-left: 5em; 
+	padding: 0;
+
+}
+
+p { 
+	margin-top: 0; 
+	text-align: justify;
+}
+
+h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #7D775C;
+}
+
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+}
+
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+}
+
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+}
+
+abbr {
+	border-bottom: none;
+}
+
+.summary {
+    margin-left: 20px; /* Marge aan de linkerkant */
+    margin-top: 16em; /* Marge aan de bovenkant */
+    max-width: 40%; /* Maximale breedte van 50% van de horizontale pagina */
+}
+
+header {
+	position: relative;
+	text-align: center;
+	top: 10em;
+	color: whitesmoke;
+}
+
+header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 400px;
+	height: 100px;
+	background-color: #9B6111;
+	z-index: -1;
+}
+
+header::after {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: 32%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: white;
+	z-index: 1;
+}
+
+header::before .circle {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: white;
+	z-index: 1;
+}
+
+header::before .circle:nth-of-type(1) {
+	top: 30px;
+	left: 30px;
+}
+
+header::before .circle:nth-of-type(2) {
+	top: 70px;
+	left: 80px;
+}
+
+header::before .circle:nth-of-type(3) {
+	top: 50px;
+	right: 50px;
+}
+
+header::before .circle:nth-of-type(4) {
+	bottom: 30px;
+	left: 200px;
+}
+
+#zen-preamble {
+    text-align: left;
+    max-width: 50%;
+    margin-left: auto;
+}
+#zen-preamble::before {
+    content: "";
+    display: inline-block;
+    width: 240px; /* Vervang dit met de gewenste breedte van de afbeelding */
+    height: 240px; /* Vervang dit met de gewenste hoogte van de afbeelding */
+    background-image: url('Boots.png'); /* Vervang dit met het juiste pad naar je afbeelding */
+    background-size: cover;
+	margin-right: 10px;
+	position: absolute;
+	left: 5em;
+	margin-bottom: 10em;
+
+}
+
+/* LINKS explanation*/
+#zen-explanation {
+	text-align: left;
+	margin-left: 0;
+	margin-right: auto;
+	max-width: 45%;
+}
+
+/* Rechts gedeelte*/
+#zen-participation {
+	text-align: left;
+	margin-left: 6em;
+	max-width: 45%;
+}
+
+#zen-explanation,
+#zen-participation {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Links vd gramofoon*/
+
+/* Gramofoon*/
+#zen-benefits {
+	display: flex;
+	flex-direction: column; /* Toegevoegde regel */
+	align-items: left;
+  }
+  
+  #zen-benefits > p {
+	max-width: 45%;
+  }
+  
+  #zen-benefits::after {
+	content: "";
+	background-image: url('Gramofoon.png');
+	background-size: cover;
+	width: 300px; /* Pas de breedte van de afbeelding aan indien nodig */
+	height: 300px; /* Pas de hoogte van de afbeelding aan indien nodig */
+	margin-left: 850px; /* Pas de linker marge van de afbeelding aan indien nodig */
+	margin-top: -120px; /* Pas de bovenste marge van de afbeelding aan indien nodig */
+  }
+	
+
+/* Zen requirements Links*/
+#zen-requirements > p:first-of-type {
+	background-image: url('BG.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding-right: 10px;
+	color: white;
+	max-width: 45%;
+  }
+  
+
+  /* FOOTER*/
+  footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+  }
+  
+  footer a {
+	display: inline-block;
+	background-color: brown;
+	color: white;
+	padding: 0.5em;
+	border-radius: 50%;
+	margin: 0.2em;
+  }
+  
+
+/* specific divs */
+
+/* START KEYFRAMES */
+@media (max-width: 768px) {
+	#zen-preamble::before {
+		content: "";
+		display: inline-block;
+		width: 220px; /* Vervang dit met de gewenste breedte van de afbeelding */
+		height: 220px; /* Vervang dit met de gewenste hoogte van de afbeelding */
+		background-image: url('Boots.png'); /* Vervang dit met het juiste pad naar je afbeelding */
+		background-size: cover;
+		position: relative; /* Verander 'absolute' naar 'relative' om element in documentstroom te behouden */
+		margin-bottom: 0em; /* Verhoog of verlaag de waarde naar wens */
+		margin-right: 0;
+		margin-left: auto; /* Verplaats het element naar links door 'margin-left' op 'auto' te zetten */
+	}
+	#zen-preamble {
+		text-align: left;
+		max-width: 100%; /* Verwijder 'max-width: 70%;' */
+		margin-left: 0; /* Verwijder 'margin-left: auto;' */
+		padding-right: 4em;
+		padding-top: 3em;
+		padding-bottom: 3em;
+  		position: relative; /* Voeg deze regel toe om relatieve positionering te behouden */
+  }
+  #zen-summary {
+	text-align: left;
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 768px;
+}
+
+}
+
+
+
+/* END KEYFRAMES */
