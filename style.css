@@ -208,6 +208,7 @@ header::before {
 	height: 310px; /* Pas de hoogte van de afbeelding aan indien nodig */
 	margin-left: 850px; /* Pas de linker marge van de afbeelding aan indien nodig */
 	margin-top: -220px; /* Pas de bovenste marge van de afbeelding aan indien nodig */
+	margin-bottom: 5em;
   }
   footer {
 	position: fixed;
