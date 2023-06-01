@@ -24,6 +24,7 @@ body {
 	background-image: radial-gradient(rgba(0, 0, 0, 0.03) 2px, transparent 2px);
 	background-size: 30px 30px;
 	animation: moveSpots 5s linear infinite;
+	overflow-x: hidden;
   }
   
   @keyframes moveSpots {
@@ -94,16 +95,7 @@ abbr {
 	position: relative; /* Vereist voor het positioneren van de vogels */
   }
   
-  .bird {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50px; /* Breedte van de vogelafbeelding */
-	height: 50px; /* Hoogte van de vogelafbeelding */
-	background-image: url('WantedBoer.png');
-	background-size: cover;
-	animation: flyBirds 10s linear infinite; /* Animatie voor het vliegen van de vogels */
-  }
+
   
   @keyframes flyBirds {
 	0% {
@@ -288,6 +280,8 @@ header::before {
 }
 #zen-requirements {
 	color: white;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 #zen-requirements > p:first-of-type::after {
@@ -295,50 +289,45 @@ header::before {
 	display: inline-block;
 	width: 60%; /* Pas de breedte van de afbeelding aan */
 	height: 59%; /* Pas de hoogte van de afbeelding aan */
-	background-image: url('WantedBoer.png'); /* Voeg de afbeelding toe */
-	background-size: cover;
-	background-repeat: no-repeat;
-	position: absolute;
 	right: -15em; /* Plaats de afbeelding aan de rechterkant */
 	top: 9em; /* Plaats de afbeelding aan de bovenkant */
-	margin-left: 20px; /* Voeg wat marge toe aan de linkerkant van de afbeelding */
+	margin-left: 40px; /* Voeg wat marge toe aan de linkerkant van de afbeelding */
 }
 
 .requirements {
 	text-align: left; /* Zet de tekst links uitlijnen */
-	max-width: 50%; /* Zet de maximale breedte van de tekst */
+	max-width: 40%; /* Zet de maximale breedte van de tekst */
 }
 
 #zen-requirements > p:not(:first-of-type) {
 	text-align: left; /* Zet de tekst rechts uitlijnen */
 }
 #zen-requirements {
-	background-image: url('Wanted.png'); /* Voeg de achtergrondafbeelding toe */
+	background-image: url('Wanted5.png'); /* Voeg de achtergrondafbeelding toe */
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 20px; /* Voeg wat ruimte toe rondom de inhoud */
-	background-size: 50em;
-	
+	background-size: 64em;
 }
 #zen-requirements {
-	padding: 80px; /* Voeg padding toe aan de binnenkant van de poster */
+	padding: 85px; /* Voeg padding toe aan de binnenkant van de poster */
 }
 
 #zen-requirements > * {
-	margin:40px; /* Voeg margin toe aan alle elementen binnen de poster */
+	margin:92px; /* Voeg margin toe aan alle elementen binnen de poster */
 }
 
 #zen-requirements > h3 {
-	margin-top: 7em; /* Verwijder de margin boven de kop (header) */
-	margin-bottom: -6em;
+	margin-top: 8.5em; /* Verwijder de margin boven de kop (header) */
+	margin-bottom: -5.7em;
 }
 
 #zen-requirements > p {
 	margin-bottom: -36px; /* Pas de margin onderaan de paragrafen aan */
+	max-width: 50%;
 }
 
 #zen-requirements {
-	transform: rotate(-8deg); /* Roteren met 45 graden */
+	transform: rotate(-6deg); /* Roteren met 45 graden */
 }
 
 
@@ -435,6 +424,7 @@ header::before {
 		animation: moveSpots 5s linear infinite;
 		margin-right: 2em;
 		margin-left: 2em;
+		overflow: hidden;
 	  }
 
 	header {
@@ -646,6 +636,7 @@ header::before {
 	height: 170px; /* Pas de hoogte van de afbeelding aan indien nodig */
 	margin-left: 190px; /* Pas de linker marge van de afbeelding aan indien nodig */
 	margin-top: 0px; /* Pas de bovenste marge van de afbeelding aan indien nodig */
+	margin-right: 5em;
   }
 
 /* Einde gramofoon */
@@ -674,7 +665,7 @@ header::before {
 		animation: moveSpots 5s linear infinite;
 		margin-right: 2em;
 		margin-left: 2em;
-	  }
+	}
 
 	header {
 		position: relative;
