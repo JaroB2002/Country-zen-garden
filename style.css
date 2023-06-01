@@ -70,18 +70,18 @@ h3 {
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #B7A5DF;
+	color: #8F5A10;
 }
 
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #D4CDDC;
+	color: #8F5A10;
 }
 
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
-	color: #9685BA;
+	color: #3F1F02;
 }
 
 abbr {
@@ -133,8 +133,10 @@ header::before {
 
 #zen-preamble {
     text-align: left;
-    max-width: 50%;
     margin-left: auto;
+	max-width: 45.5%;
+	margin-right: 2em;
+
 }
 #zen-preamble::before {
     content: "";
@@ -145,8 +147,23 @@ header::before {
     background-size: cover;
 	margin-right: 10px;
 	position: absolute;
+	
 	left: 5em;
 	margin-bottom: 10em;
+	
+
+}
+#zen-preamble::after {
+    content: "";
+    display: inline-block;
+    width: 270px; /* Vervang dit met de gewenste breedte van de afbeelding */
+    height: 81px; /* Vervang dit met de gewenste hoogte van de afbeelding */
+    background-image: url('Gitaar2.png'); /* Vervang dit met het juiste pad naar je afbeelding */
+    background-size: cover;
+	position: absolute;
+	
+	left: 28em;
+	
 
 }
 
@@ -194,15 +211,18 @@ header::before {
   }
   footer {
 	position: fixed;
+	color: aliceblue;
 	right: 0;
 	bottom: 0;
 	padding: 1em; /* Voeg wat ruimte toe rondom de inhoud */
 	font-family: "Georgia", serif; /* Gebruik een lettertype dat bij hout past */
-  }
-  
-  footer a {
-	display: inline-block;
-	background-color: #8B4513; /* Lichtere bruine kleur */
+}
+
+footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f6efea; /* Lichtere bruine kleur */
 	color: white;
 	padding: 0.5em;
 	border-radius: 50%;
@@ -210,67 +230,20 @@ header::before {
 	text-decoration: none; /* Verwijder de onderstreping van de links */
 	font-weight: bold; /* Maak de tekst vetgedrukt */
 	font-family: "Georgia", serif; /* Gebruik hetzelfde lettertype als de footer */
-  }
-  
-  
-	
 
-/* Zen requirements Links */
-/*#zen-requirements > p:first-of-type {
-	background-image: url('BG.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: right top;
-	padding-right: 10px;
-	color: white;
-	max-width: 45%;
+	/* Voeg onderstaande regels toe voor het aanpassen van de grootte en het ouder uiterlijk */
+	width: 45px; /* Gewenste breedte van de cirkel */
+	height: 45px; /* Gewenste hoogte van de cirkel */
 }
 
-.requirements {
-	text-align: left;
-	max-width: 50%;
-	margin-left: auto;
-}
-
-.requirements::before {
-	content: "";
+footer a span {
 	display: inline-block;
-	width: 400px;
-	height: 400px;
-	background-image: url('Gitaar.png');
-	background-size: cover;
-	margin-right: 10px;
-	position: absolute;
-	left: 5em;
-	margin-bottom: 10em;
+	position: relative;
+	top: -1px; /* Pas de positie van de tekst aan om het in het midden te centreren */
 }
 
-.requirements p:nth-of-type(2) {
-	text-align: left;
-	width: 100%;
-}
 
-#zen-requirements > p:first-of-type {
-	text-align: left;
-	max-width: 100%;
-}
 
-#zen-requirements {
-	background-image: url('Wanted.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	padding: 100px;
-	box-sizing: border-box;
-	transform: rotate(10deg); /* Apply rotation to the background only */
-/* }
- *//*
-#zen-requirements h3,
-#zen-requirements p {
-	font-size: 14px;
-}
-  
-  */
 /* Zen requirements Links */
 #zen-requirements > p:first-of-type {
 	text-align: left; /* Zet de tekst links uitlijnen */
@@ -323,7 +296,7 @@ header::before {
 
 #zen-requirements > p {
 	margin-bottom: -36px; /* Pas de margin onderaan de paragrafen aan */
-	max-width: 50%;
+	max-width: 45%;
 }
 
 #zen-requirements {
@@ -419,12 +392,11 @@ header::before {
 		color: #555753;
 		padding: 0;
 		background-color: #F0D2BA;
-		background-image: radial-gradient(rgba(0, 0, 0, 0.03) 2px, transparent 2px);
+		background-image: radial-gradient(rgba(0, 0, 0, 0.04) 2px, transparent 2px);
 		background-size: 30px 30px;
 		animation: moveSpots 5s linear infinite;
 		margin-right: 2em;
 		margin-left: 2em;
-		overflow: hidden;
 	  }
 
 	header {
@@ -606,7 +578,7 @@ header::before {
 		left: -5.2em;
 		width: 480px;
 		height: 210px; /* Pas de hoogte aan naar wens */
-		background-image: url(toog.png); /* Vervang "toog.png" met de juiste bestandsnaam en pad */
+		background-image: url(toog2.jpg); /* Vervang "toog.png" met de juiste bestandsnaam en pad */
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -714,6 +686,21 @@ header::before {
 		text-align: left;
 		max-width: 11000%; /* Verwijder 'max-width: 70%;' */
   }
+
+  #zen-preamble::after {
+    content: "";
+    display: inline-block;
+    width: 170px; /* Vervang dit met de gewenste breedte van de afbeelding */
+    height: 51px; /* Vervang dit met de gewenste hoogte van de afbeelding */
+    background-image: url('Gitaar2.png'); /* Vervang dit met het juiste pad naar je afbeelding */
+    background-size: cover;
+	position: absolute;
+	left: 0em;
+	
+
+}
+
+
   /* A demonstration of what can be... */
   #zen-summary {
 	text-align: left;
@@ -739,146 +726,59 @@ header::before {
 	}
 
 
-	/* Benefits */
-	.benefits {
-		text-align: left;
-		padding: 0;
-		margin: 0;
-		max-width: 60%;
-	  } 
 
-	/* Requirements met de boer en wanted*/
-	#zen-requirements > p:first-of-type {
-		text-align: left;
-		position: relative;
-		max-width: 110%;
-		padding-top: 10em;
-	  }
-	  #zen-requirements > p:first-of-type::after {
-		content: none;
-	  }
-	  
-	  #zen-requirements {
-		color: #555753;
-		background-image: none; /* Verwijder de achtergrondafbeelding */
-		padding: 0; /* Verwijder de padding */
-		max-width: 100%;
-
-	  }
-	  
-	  #zen-requirements > * {
-		margin: 0; /* Verwijder de margin van alle elementen binnen de poster */
-		min-width: 100%;
-
-	  }
-	  
-	  #zen-requirements > h3 {
-		margin-top: -2em; /* Verwijder de margin boven de kop (header) */
-		margin-bottom: -4em; 
-		min-width: 100%;
-
-	  }
-	  
-	  #zen-requirements > p {
-		margin-bottom: 0; /* Verwijder de margin onderaan de paragrafen */
-		min-width: 100%;
-
-	  }
-	  
-	  #zen-requirements {
-		transform: none; /* Verwijder de rotatie */
-		min-width: 100%;
-
-	  }
 	  
 
-	  /* 3 vakken en toog */
-	  .sidebar {
-		display: none;
-	  }
-	
-	.design-selection,
-	.design-archives,
-	.zen-resources {
-		flex: 1;
-		background-color: #F5DEB3;
-		padding: 1em;
-		margin: 0.5em;
-	}
-	
-	.design-selection h3,
-	.design-archives h3,
-	.zen-resources h3 {
-		color: #8B4513;
-		font-family: "Georgia", serif;
-		font-size: 1.2em;
-		margin-bottom: 0.5em;
-	}
-	
-	.design-selection a,
-	.design-archives a,
-	.zen-resources a {
-		color: #8B4513;
-		text-decoration: none;
-		font-family: "Georgia", serif;
-		font-size: 1em;
-	}
-	
-	.design-selection a:hover,
-	.design-archives a:hover,
-	.zen-resources a:hover {
-		text-decoration: underline;
-	}
-	
-	.wrapper {
-		position: relative; /* Maak de wrapper een relatieve positie */
-		display: flex;
-		width: 30%;
-		justify-content: center;
-		margin-top: 7em;
-		padding-bottom: 34em;
-	}
-	
-	.wrapper::after {
-		content: "";
-		position: absolute;
-		top: 70%;
-		left: -5.2em;
-		width: 480px;
-		height: 210px; /* Pas de hoogte aan naar wens */
-		background-image: url(toog.png); /* Vervang "toog.png" met de juiste bestandsnaam en pad */
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		margin-left: 0em;
-	}
+
 	
 	/* END INTRO & BOOTS */
 	
 /* Start gramofoon */
 /* Links vd gramofoon*/
 
-#zen-benefits {
-	display: flex;
-	flex-direction: column; /* Toegevoegde regel */
-	align-items: left;
-  }
-  
-  #zen-benefits > p {
-	max-width: 45%;
-  }
+
 /* Gramofoon*/
-#zen-benefits::after {
-	content: "";
-	background-image: url('Gramofoon.png');
-	background-size: cover;
-	width: 190px; /* Pas de breedte van de afbeelding aan indien nodig */
-	height: 170px; /* Pas de hoogte van de afbeelding aan indien nodig */
-	margin-left: 190px; /* Pas de linker marge van de afbeelding aan indien nodig */
-	margin-top: 0px; /* Pas de bovenste marge van de afbeelding aan indien nodig */
-  }
+
 
 /* Einde gramofoon */
+
+
+/* start footer */
+footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	padding: 1em; /* Voeg wat ruimte toe rondom de inhoud */
+	font-family: "Georgia", serif; /* Gebruik een lettertype dat bij hout past */
+}
+
+footer a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #8B4513; /* Lichtere bruine kleur */
+	color: white;
+	padding: 0.5em;
+	border-radius: 50%;
+	margin: 0.2em;
+	text-decoration: none; /* Verwijder de onderstreping van de links */
+	font-weight: bold; /* Maak de tekst vetgedrukt */
+	font-family: "Georgia", serif; /* Gebruik hetzelfde lettertype als de footer */
+	font-size: 9px;
+	/* Voeg onderstaande regels toe voor het aanpassen van de grootte en het ouder uiterlijk */
+	width: 25px; /* Gewenste breedte van de cirkel */
+	height: 25px; /* Gewenste hoogte van de cirkel */
+	border: 1px solid #8B4513; /* Voeg een rand toe aan de cirkel */
+	background-image: linear-gradient(#8B4513, #8B4513 50%, transparent 50%, transparent); /* Voeg een oud uitziende achtergrond toe aan de cirkel */
+}
+
+footer a span {
+	display: inline-block;
+	position: relative;
+	top: -1px; /* Pas de positie van de tekst aan om het in het midden te centreren */
+}
+/* end footer */
+
 
 
 }
