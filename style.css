@@ -245,14 +245,16 @@ footer a span {
 
 
 /* Zen requirements Links */
+/* zin 1 */
 #zen-requirements > p:first-of-type {
 	text-align: left; /* Zet de tekst links uitlijnen */
 	position: relative; /* Voeg positionele context toe */
-	max-width: 50%; /* Zet de maximale breedte van de tekst */
-	padding-top: 10em;
+	max-width: 35%; /* Zet de maximale breedte van de tekst */
+	padding-top: 9em;
+	line-height: 28px;
 }
 #zen-requirements {
-	color: white;
+	color: whitesmoke;
 	max-width: 100%;
 	max-height: 100%;
 }
@@ -270,6 +272,8 @@ footer a span {
 .requirements {
 	text-align: left; /* Zet de tekst links uitlijnen */
 	max-width: 40%; /* Zet de maximale breedte van de tekst */
+	line-height: 30px;
+
 }
 
 #zen-requirements > p:not(:first-of-type) {
@@ -292,11 +296,13 @@ footer a span {
 #zen-requirements > h3 {
 	margin-top: 8.5em; /* Verwijder de margin boven de kop (header) */
 	margin-bottom: -5.7em;
+	max-width: 20%;
 }
 
 #zen-requirements > p {
 	margin-bottom: -36px; /* Pas de margin onderaan de paragrafen aan */
-	max-width: 45%;
+	max-width: 47%;
+
 }
 
 #zen-requirements {
@@ -319,6 +325,7 @@ footer a span {
 	background-color: #F5DEB3;
 	padding: 1em;
 	margin: 0.5em;
+	margin-left: -5em;
 }
 
 .design-selection h3,
@@ -328,6 +335,8 @@ footer a span {
 	font-family: "Georgia", serif;
 	font-size: 1.2em;
 	margin-bottom: 0.5em;
+	margin-left: 0;
+
 }
 
 .design-selection a,
@@ -352,6 +361,8 @@ footer a span {
 	justify-content: center;
 	margin-top: 7em;
 	padding-bottom: 34em;
+	margin-left: -5em;
+
 }
 
 .wrapper::after {
@@ -604,8 +615,8 @@ footer a span {
 	content: "";
 	background-image: url('Gramofoon.png');
 	background-size: cover;
-	width: 190px; /* Pas de breedte van de afbeelding aan indien nodig */
-	height: 170px; /* Pas de hoogte van de afbeelding aan indien nodig */
+	width: 180px; /* Pas de breedte van de afbeelding aan indien nodig */
+	height: 160px; /* Pas de hoogte van de afbeelding aan indien nodig */
 	margin-left: 190px; /* Pas de linker marge van de afbeelding aan indien nodig */
 	margin-top: 0px; /* Pas de bovenste marge van de afbeelding aan indien nodig */
 	margin-right: 5em;
@@ -706,42 +717,27 @@ footer a span {
 	text-align: left;
 	max-width: 768px;
 	margin-top: 4em;
-	}
-	.explanation {
-		text-align: left;
-		min-width: 100%;
-		padding: 0;
-	}
-	.participation p{
-		margin-left: -6em;
-		min-width: 220%;
-	}
-	.participation h3{
-		margin-left: -2.5em;
-	}
+}
 
-	.benefits p{
-		margin-left: -0em;
-		min-width: 164%;
-	}
+.explanation {
+	text-align: left;
+	min-width: 100%;
+	padding: 0;
+}
 
+.participation p {
+	margin-left: -6em;
+	min-width: 220%;
+}
 
+.participation h3 {
+	margin-left: -2.5em;
+}
 
-	  
-
-
-	
-	/* END INTRO & BOOTS */
-	
-/* Start gramofoon */
-/* Links vd gramofoon*/
-
-
-/* Gramofoon*/
-
-
-/* Einde gramofoon */
-
+.benefits p {
+	margin-left: -0em;
+	min-width: 164%;
+}
 
 /* start footer */
 footer {
@@ -756,7 +752,6 @@ footer a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #8B4513; /* Lichtere bruine kleur */
 	color: white;
 	padding: 0.5em;
 	border-radius: 50%;
@@ -768,8 +763,6 @@ footer a {
 	/* Voeg onderstaande regels toe voor het aanpassen van de grootte en het ouder uiterlijk */
 	width: 25px; /* Gewenste breedte van de cirkel */
 	height: 25px; /* Gewenste hoogte van de cirkel */
-	border: 1px solid #8B4513; /* Voeg een rand toe aan de cirkel */
-	background-image: linear-gradient(#8B4513, #8B4513 50%, transparent 50%, transparent); /* Voeg een oud uitziende achtergrond toe aan de cirkel */
 }
 
 footer a span {
@@ -779,7 +772,48 @@ footer a span {
 }
 /* end footer */
 
+#zen-requirements > p:first-of-type {
+	text-align: left; /* Zet de tekst links uitlijnen */
+	position: relative; /* Voeg positionele context toe */
+	max-width: 80%; /* Zet de maximale breedte van de tekst */
+	padding-top: 15.4em;
+	line-height: 24px; /* Verklein de regelhoogte */
+	margin-bottom: 0; /* Verwijder de margin onderaan de eerste alinea */
+}
 
+.requirements {
+	text-align: left; /* Zet de tekst links uitlijnen */
+	max-width: 80%; /* Zet de maximale breedte van de tekst */
+	line-height: 36px;
+}
+
+#zen-requirements > p:not(:first-of-type) {
+	text-align: left; /* Zet de tekst links uitlijnen */
+	margin-top: 0; /* Verwijder de margin boven elke alinea */
+}
+
+#zen-requirements {
+	background-color: transparent; /* Maak de achtergrondkleur transparant */
+}
+
+#zen-requirements > * {
+	margin: 0; /* Verwijder de margin van alle elementen binnen de poster */
+}
+
+#zen-requirements > h3 {
+	margin-top: 4.5em; /* Verwijder de margin boven de kop (header) */
+	max-width: 80%;
+}
+
+#zen-requirements > p {
+	margin-bottom: -14px; /* Pas de margin onderaan de alinea's aan */
+	max-width: 77%;
+	font-size: 12px;
+}
+
+#zen-requirements {
+	transform: rotate(0deg); /* Roteren met 0 graden */
+}
 
 }
 
